@@ -1,6 +1,6 @@
 # Filter by Various Predicate. Interfaces
 
-Intermediate level task for practicing inheritance classes, abstract classes and methods, Template Method design pattern.
+Intermediate level task for practicing Interfaces, Strategy pattern.
 
 Estimated time to complete the task - 2h.
 
@@ -21,7 +21,7 @@ The task requires .NET 6 SDK installed.
 
     _Discuss this question and your answer with your trainer, if you work in a regular group._
 
-- Define predicate as a `Verify` method of the [IPredicate](FilterByPredicate/IPredicate.cs) interface. The implementation details of the predicate logic are left to the derived classes.
+- Define predicate as a `IsMatch` method of the [IPredicate](FilterByPredicate/IPredicate.cs) interface. The implementation details of the predicate logic are left to the derived classes.
 
 - Put the common part of the code as a skeleton of operations in the `Select` extesion method of the [ArrayExtensions](FilterByPredicate) static class. The method must contain the `IPredicate` interface as a parameter.
 
