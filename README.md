@@ -1,4 +1,4 @@
-# Filter by Various Predicate. Interfaces
+# Filter by Predicate. Interfaces
 
 Intermediate level task for practicing Interfaces, Strategy pattern.
 
