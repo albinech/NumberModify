@@ -1,8 +1,8 @@
 # Filter by Predicate. Interfaces
 
-Intermediate level task for practicing Interfaces, Strategy pattern.
+Intermediate level task for practicing interfaces, strategy pattern.
 
-Estimated time to complete the task - 2h.
+Estimated time to complete the task - 1.5h.
 
 The task requires .NET 6 SDK installed.
 
