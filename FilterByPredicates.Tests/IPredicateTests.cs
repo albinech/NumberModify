@@ -6,7 +6,7 @@ using NUnit.Framework;
 namespace FilterByPredicates.Tests
 {
     [TestFixture]
-    public class IPredicateTests
+    public class PredicateTests
     {
         [TestCase(10)]
         [TestCase(100)]

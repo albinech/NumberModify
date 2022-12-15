@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace FilterByPredicate
 {
+    /// <summary>
+    /// Contains sz-array extension method.
+    /// </summary>
     public static class ArrayExtension
     {
         /// <summary>

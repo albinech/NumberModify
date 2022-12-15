@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using FilterByPredicate;
 
 namespace FilterByDigit
@@ -17,7 +17,7 @@ namespace FilterByDigit
             get => throw new NotImplementedException();
             set => throw new NotImplementedException();
         }
-        
+
         /// <inheritdoc/>
         public bool IsMatch(int number)
         {
