@@ -21,7 +21,7 @@ The task requires .NET 6 SDK installed.
 
     _Discuss this question and your answer with your trainer, if you work in a regular group._
 
-- Define predicate as a `IsMatch` method of the [IPredicate](FilterByPredicate/IPredicate.cs) interface. The implementation details of the predicate logic are left to the derived classes.
+- In this task predicate is defined as a `IsMatch` method of the [IPredicate](FilterByPredicate/IPredicate.cs) interface. The implementation details of the predicate logic are left to the derived classes.
 
 - Put the common part of the code as a skeleton of operations in the `Select` extesion method of the [ArrayExtensions](FilterByPredicate) static class. The method must contain the `IPredicate` interface as a parameter.
 
@@ -30,10 +30,9 @@ The task requires .NET 6 SDK installed.
     - [Filter by Digit](FilerByDigit);
     - [Filter by Palindromic](FilterByPalindromic).
 
-- Run all unit tests.
+## Task Checklist
 
-- Study [mock](http://xunitpatterns.com/Mock%20Object.html) tests and the [Moq](https://github.com/Moq/moq4/wiki/Quickstart) Framework.
-
-- Suggest your custom version of the predicate and place it in separate project. Add unit tests for this solution to [FilterTests](FilterByPredicates.Tests/FilterTests.cs) class.
-
-- Study the [Strategy](https://refactoring.guru/design-patterns/strategy) design pattern.
+* Build a solution in [Visual Studio](https://docs.microsoft.com/en-us/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio?view=vs-2019). Make sure there are **no compiler errors and warnings**, fix these issues and rebuild the solution. 
+* Run all unit tests with [Visual Studio](https://docs.microsoft.com/en-us/visualstudio/test/run-unit-tests-with-test-explorer?view=vs-2019) and make sure there are **no failed unit tests**. Fix your code to [make all tests GREEN](https://stackoverflow.com/questions/276813/what-is-red-green-testing). 
+* Review all your changes in the codebase **before** [staging the changes and creating a commit](https://docs.microsoft.com/en-us/azure/devops/repos/git/commits?view=azure-devops&tabs=visual-studio). 
+* [Stage your changes, create a commit](https://docs.microsoft.com/en-us/azure/devops/repos/git/commits?view=azure-devops&tabs=visual-studio), and publish your changes to the remote repository. 
