@@ -1,6 +1,6 @@
 # Filter by Predicate. Interfaces
 
-Intermediate level task for practicing interfaces, [strategy pattern](https://refactoring.guru/design-patterns/strategy/csharp/example).
+Intermediate level task for practicing interfaces, strategy pattern.
 
 Estimated time to complete the task - 1.5h.
 
