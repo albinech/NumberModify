@@ -1,12 +1,11 @@
-﻿using System.Linq;
-using FilterByPredicate;
+﻿using FilterByPredicate;
 using Moq;
 using NUnit.Framework;
 
 namespace FilterByPredicates.Tests
 {
     [TestFixture]
-    public class PredicateTests
+    public class IPredicateTests
     {
         [TestCase(10)]
         [TestCase(100)]
