@@ -4,7 +4,7 @@ namespace ArrayExtensions
 {
     /// <summary>
     /// Class of the additional operations with array.
-    /// </summary>
+    /// </summary☻☻☻☻☻☻☻☻
     public static class ArrayExtension
     {
         /// <summary>
@@ -21,20 +21,46 @@ namespace ArrayExtensions
         /// </example>
         public static int[] FilterByDigit(this int[]? source, int digit)
         {
-            // Add necessary code here, than remove comment.
+            if (source is null)
+            {
+                throw new ArgumentNullException(nameof(source));
+            }
+
+            if (source.Length == 0)
+            {
+                throw new ArgumentException(null, nameof(source));
+            }
+
+            if (digit < 0 || digit > 9)
+            {
+                throw new ArgumentOutOfRangeException(nameof(digit));
+            }
+
+            List<int> filteredArray = new List<int>();
+
             foreach (var item in source)
             {
-                if (IsMatch(item))
+                if (IsMatch(item, digit))
                 {
-                    // Add necessary code here, than remove comment.
+                    filteredArray.Add(item);
                 }
             }
 
-            throw new NotImplementedException();
+            return filteredArray.ToArray();
 
-            static bool IsMatch(int value)
+            static bool IsMatch(int value, int digit)
             {
-                throw new NotImplementedException();
+                int remainNumber;
+                while (value > 0)
+                {
+                    remainNumber = value % 10;
+                    if (remainNumber == digit)
+                    {
+                        return true;
+                    }
+                }
+
+                return false;
             }
         }
 
@@ -51,20 +77,30 @@ namespace ArrayExtensions
         /// </example>
         public static int[] FilterByPalindromic(this int[]? source)
         {
-            // Add necessary code here, than remove comment.
+            if (source is null)
+            {
+                throw new ArgumentNullException(nameof(source));
+            }
+
+            List<int> filteredArray = new List<int>();
             foreach (var item in source)
             {
                 if (IsMatch(item))
                 {
-                    // Add necessary code here, than remove comment.
+                    filteredArray.Add(item);
                 }
             }
 
-            throw new NotImplementedException();
-
+            return filteredArray.ToArray();
             static bool IsMatch(int value)
             {
-                throw new NotImplementedException();
+                var toString = value.ToString();
+                if (toString == toString.Reverse())
+                {
+                    return true;
+                }
+
+                return false;
             }
         }
     }

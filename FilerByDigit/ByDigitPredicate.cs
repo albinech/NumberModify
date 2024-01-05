@@ -8,20 +8,43 @@ namespace FilterByDigit
     /// </summary>
     public class ByDigitPredicate : IPredicate
     {
+        private int digit;
+
         /// <summary>
         /// Gets or sets a digit.
         /// </summary>
         /// <exception cref="ArgumentOutOfRangeException">Thrown when Digit more than 9 or less than 0.</exception>
         public int Digit
         {
-            get => throw new NotImplementedException();
-            set => throw new NotImplementedException();
+            get => this.digit;
+            set
+            {
+                if (value > 9 || value < 0)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(value));
+                }
+
+                this.digit = value;
+            }
         }
 
         /// <inheritdoc/>
         public bool IsMatch(int number)
         {
-            throw new NotImplementedException();
+            int remainNumber;
+            int newNumber = Math.Abs(number);
+            while (newNumber > 0)
+            {
+                remainNumber = newNumber % 10;
+                if (remainNumber == this.digit)
+                {
+                    return true;
+                }
+
+                newNumber /= 10;
+            }
+
+            return false;
         }
     }
 }

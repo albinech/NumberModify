@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using FilterByPredicate;
 
 namespace FilterByPalindromic
@@ -11,7 +11,13 @@ namespace FilterByPalindromic
         /// <inheritdoc/>
         public bool IsMatch(int number)
         {
-            throw new NotImplementedException();
+            var toString = number.ToString();
+            if (toString == toString.Reverse())
+            {
+                return true;
+            }
+
+            return false;
         }
     }
 }
